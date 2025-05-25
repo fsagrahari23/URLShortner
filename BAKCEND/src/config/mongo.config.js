@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const connectDb = async ()=>{
     try{
-     const conn = await mongoose.connect("mongodb+srv://monuagrhari854:mongo@cluster0.8jwl5da.mongodb.net/");
+     const conn = await mongoose.connect("");
      console.log(`Mongodb Connected:  ${conn.connection.host}`)
     }catch(err){
       console.error(`Error: ${err.message}`);
